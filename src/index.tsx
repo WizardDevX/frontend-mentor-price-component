@@ -2,15 +2,18 @@ import React from "react";
 import { render } from "react-dom";
 import "./index.css";
 import App from "./App";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, DefaultTheme } from "styled-components";
 
-const theme = {
+const theme: DefaultTheme = {
 	colors: {
-		primary: "hsl(322, 100%, 66%)",
-		cyan: "hsl(193, 100%, 96%)",
-		darkCyan: "hsl(192, 100%, 9%)",
-		grayBlue: "hsl(208, 11%, 55%)",
+		blue: "#696fdd",
+		lightBlue: "#a3a8f0",
+		darkGrayBlue: "hsl(232, 13%, 33%)",
+		grayBlue: "hsl(233, 13%, 49%)",
+		lightGrayBlue: "hsl(234, 14%, 74%)",
+		veryLightGrayBlue: "hsl(240, 78%, 98%)",
 	},
+	gradient: "linear-gradient(to right,#a3a8f0, #696fdd)",
 };
 
 render(
